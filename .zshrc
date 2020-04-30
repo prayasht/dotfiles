@@ -1,13 +1,13 @@
 # zshrc
-# Prayash Thapa (prayash@effulgence.io)
+# Prayash Thapa (hi@prayash.io)
 
 # -----------------------------------------------------------
 ## Init
 
 # nvm
-export NVM_LAZY_LOAD=true
+# export NVM_LAZY_LOAD=true
 
-plugins+=(zsh-nvm)
+# plugins+=(zsh-nvm)
 
 # zsh plugins
 plugins+=(zsh-autosuggestions zsh-syntax-highlighting z node osx asdf)
@@ -35,43 +35,43 @@ ZSH_THEME=""
 export PATH="$HOME/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # MySQL
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+# export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Ruby
-export PATH="$PATH:$HOME/.rbenv/shims"
+# export PATH="$PATH:$HOME/.rbenv/shims"
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 # Node
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # Anaconda
-export PATH="$HOME/anaconda/envs/python2/bin:$PATH"
+# export PATH="$HOME/anaconda/envs/python2/bin:$PATH"
 
 # Python
-export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
+# export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
 
 # Rust
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 # Android
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Spark
 # export SPARK_HOME=/Users/effulgence/spark
 # export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
 # export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.4-src.zip:$PYTHONPATH
 
-export ANACONDA_ROOT="~/anaconda"
+# export ANACONDA_ROOT="~/anaconda"
 
 # Fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"
+# export PATH="$HOME/.fastlane/bin:$PATH"
 
 # -----------------------------------------------------------
 ## Aliases
