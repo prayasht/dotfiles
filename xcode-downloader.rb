@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# Dependencies: brew install aria2
+# Note: Before running ./xcode-downloader.rb, ensure you have the correct URL and ADCDownloadAuth token. 
+
 print "What is the URL of your Apple Downloads resource?\nURL:"
 url = gets.strip
 
