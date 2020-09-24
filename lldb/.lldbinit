@@ -1,0 +1,6 @@
+# LLDB aliases and scripts.
+# Run `ln -s ~/Developer/lldb/.lldbinit ~/.lldbinit` in your home directory!
+
+# command script import ~/Developer/lldb/nudge.py
+command alias poc express -l objc -O --
+command alias flush express -l objc -- (void)[CATransaction flush]

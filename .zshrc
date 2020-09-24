@@ -136,6 +136,7 @@ alias grbc='git rebase --continue'
 alias grba='git rebase --abort'
 alias grbs='git rebase --skip'
 alias grhh='git reset --hard HEAD'
+alias grlb='git branch | grep -v "master" | xargs git branch -D'
 
 # Rails
 alias be='bundle exec'
