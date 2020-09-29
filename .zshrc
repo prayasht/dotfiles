@@ -46,6 +46,7 @@ export PATH="$HOME/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X
 
 # Node
 export PATH="$PATH:$HOME/.npm-packages/bin"
+export PATH="$HOME/bin:$PATH"
 
 # Anaconda
 # export PATH="$HOME/anaconda/envs/python2/bin:$PATH"
