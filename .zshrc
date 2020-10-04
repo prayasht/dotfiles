@@ -123,7 +123,7 @@ alias commit='git commit'
 alias amend='git commit --amend'
 alias unwip='git reset --soft HEAD^'
 
-alias go='git-open'
+alias gto='git-open'
 alias glog='git log'
 alias gst='git status'
 alias ga='git add'
