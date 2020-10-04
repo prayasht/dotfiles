@@ -46,6 +46,8 @@ export PATH="$HOME/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X
 
 # Node
 export PATH="$PATH:$HOME/.npm-packages/bin"
+
+# Some custom binaries I use are stored here
 export PATH="$HOME/bin:$PATH"
 
 # Anaconda
@@ -83,9 +85,9 @@ export PATH="$HOME/bin:$PATH"
 # For a full list of active aliases, run `alias`.
 
 # Source and edit .zshrc
-alias serc='source ~/.zshrc && code ~/Developer/.zshrc'
+alias serc='source ~/.zshrc'
 
-# Node
+# nvm
 alias n6='nvm use 6'
 alias n8='nvm use 8'
 alias nu='nvm use'
@@ -105,7 +107,7 @@ alias yf='yarn format'
 alias yl='yarn lint'
 alias yw='yarn workspace'
 
-# GitHub
+# Git
 alias clone='git clone'
 alias pull='git pull'
 alias fpull='git fetch; git pull'
@@ -139,8 +141,12 @@ alias grbs='git rebase --skip'
 alias grhh='git reset --hard HEAD'
 alias grlb='git branch | grep -v "master" | xargs git branch -D'
 
-# Rails
+# Ruby
 alias be='bundle exec'
+alias bepi='bundle exec pod install'
+alias bef='bundle exec fastlane'
+
+# Rails
 alias rmigrate='bin/rails db:migrate RAILS_ENV=development'
 alias rs='rails s'
 alias rc='rails c'
@@ -154,6 +160,12 @@ alias dojo='cd ~/dev/_dojo'
 alias server='http-server -o --cors -c-1 -a localhost -p 8000'
 alias killdups='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user;killall Finder;echo "Rebuilt Open With, relaunching Finder"'
 alias kill3000='kill -9 $(lsof -i tcp:3000 -t)'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/prayash/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/prayash/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/prayash/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/prayash/google-cloud-sdk/completion.zsh.inc'; fi
 
 # -----------------------------------------------------------
 ## Key Bindings
@@ -263,9 +275,15 @@ function flushDNS() {
 # -----------------------------------------------------------
 
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # Fuzzy finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
+
+# Cue
+export CUE_CLIENT_SRC=$HOME/dev/cue-client
+export CUE_BACKEND_SRC=$GOPATH/src/github.com/cuecal/cue-backend
+export CUE_EVENTPREDICTION_SRC=$HOME/dev/cue-eventprediction
+export GOROOT=/usr/local/opt/go/libexec
