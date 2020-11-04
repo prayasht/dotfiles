@@ -110,7 +110,7 @@ alias yw='yarn workspace'
 # Git
 alias clone='git clone'
 alias pull='git pull'
-alias fpull='git fetch; git pull'
+alias fpull='git fetch -p; git pull'
 alias push='git push'
 alias diff='git diff'
 alias status='git status'
